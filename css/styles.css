@@ -24,3 +24,9 @@ h1 {
   letter-spacing: 10pt;
   font-weight: bold;
 }
+
+img {
+  margin-left: 35%;
+  width: 200px;
+  height: 200px;
+}

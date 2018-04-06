@@ -10,8 +10,8 @@ function Pizza () {
 //prototype
 
 Pizza.prototype.pizzaPrice = function() {
-  var price = 10;
-  if (this.pizzaToppings === "cheese") {
+  var price = 0;
+  if (this.pizzaToppings === "cheese" && this.pizzaSize === "small") {
     price += 2;
   } else {
     price += 5;
@@ -20,9 +20,8 @@ Pizza.prototype.pizzaPrice = function() {
   if (this.pizzaSize === "small") {
     price += 4;
   } else {
-    price += 6;
+    price += 10;
   }
-
   return price;
 };
 
@@ -32,13 +31,13 @@ Pizza.prototype.pizzaPrice = function() {
 $(document).ready (function() {
   $(".orderPizza").submit(function(event) {
     event.preventDefault ();
-
+   $(".pizza-price").show();
 
   var inputTopping = $("#chooseToppings").val();
   var inputSize = $("#chooseSize").val();
   var Results = new Pizza (inputTopping, inputSize);
 
-  $(".pizza-price").show();
+
   $(".showPrice").text(Results.pizzaPrice());
   });
 });
