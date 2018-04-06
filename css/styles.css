@@ -1,3 +1,26 @@
 .pizza-price {
   display: none;
+  margin-left: 30%;
+  margin-top: 5%;
+  font-size: 25pt;
+}
+
+body {
+  background-color: #D5F2E3;
+  color: #BA2D0B;
+  font-family: helvetica;
+
+}
+
+.orderPizza {
+  font-size: 15pt;
+  margin-left: 30%;
+  margin-top: 10%;
+}
+
+h1 {
+  font-size: 50pt;
+  text-align: center;
+  letter-spacing: 10pt;
+  font-weight: bold;
 }
