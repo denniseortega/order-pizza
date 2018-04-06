@@ -14,11 +14,11 @@ _A website for a Pizza Company, "Yummy Slices" where a customer can choose indiv
 * _Clone and download from github_
 
 ## Specifications
-* _Program allows user to choose toppings
-  *_Example input: "pepperoni"
-*_Program allows use to choose a size for their pizza
-  *_Example input: "large"
-*_Program uses a prototype method for the cost of a pizza depending on selections.
+* _Program allows user to choose toppings_
+  * _Example input: "pepperoni"_
+* _Program allows use to choose a size for their pizza_
+  *_Example input: "large"_
+* _Program uses a prototype method for the cost of a pizza depending on selections_
 
 
 ## Known Bugs
