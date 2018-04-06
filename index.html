@@ -9,11 +9,25 @@
     <title>Order Pizza</title>
   </head>
   <body>
-    <div class = "container">
-      <h2>Order Pizza!<h2>
-      <h1>Yummy Slices<h1>
-      <h3>choose your flavor</h3>
-    </div>
+    <h2>Order Pizza!<h2>
+    <h1>Yummy Slices<h1>
+      <form class = "orderPizza">
+        <div>
+          <label for="toppings">Choose your toppings</label>
+          <br>
+            <select id="chooseToppings">
+              <option>cheese</option>
+              <option>pepperoni</option>
+              <option>basil</option>
+              <option>olives</option>
+            </select>
+        </div>
+        <button id="submitOrder" type="submit" class="btn btn-primary">Order</button>
+        <br>
+     </form>
 
+     <div class = "pizza-price">
+       <p> Total Cost: <span class = "showPrice"></span></p>
+    </div>
   </body>
 </html>

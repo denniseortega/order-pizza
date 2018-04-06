@@ -17,3 +17,18 @@ Pizza.prototype.pizzaPrice = function(){
     return price += 5;
   }
 }
+
+
+//interface logic
+
+$(document).ready (function() {
+  $(".orderPizza").submit(function(event) {
+    event.preventDefault ();
+
+  var inputTopping = $("#chooseToppings").val();
+  var Results = new Pizza (inputTopping);
+
+  $(".pizza-price").show();
+  $(".showPrice").text(Results.pizzaPrice());
+  })
+});
